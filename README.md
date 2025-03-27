@@ -1,6 +1,8 @@
 # Demo
 Download Data for EGX 
 
+![GitHub Repo stars](https://img.shields.io/github/stars/omar-Abouyoussef/demo?style=social)
+
 # EGX Stock Data Downloader 📊  
 
 A **Streamlit-based web application** that allows users to download **intraday, daily, weekly, and monthly historical data** for the **Egyptian Exchange (EGX)**. This project is **100% free and open-source**.  
