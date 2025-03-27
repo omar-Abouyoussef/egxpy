@@ -5,6 +5,8 @@ Download Data for EGX
 
 A **Streamlit-based web application** that allows users to download **intraday, daily, weekly, monthly, and even 1-minute historical data** for the **Egyptian Exchange (EGX)**. This project is **100% free and open-source**.  
 
+Webapp: https://egx-data.streamlit.app/
+
 ## Features 🚀  
 ✔️ **User-friendly interface** powered by Streamlit  
 ✔️ **Download historical stock data** with various timeframes  
@@ -27,5 +29,13 @@ A **Streamlit-based web application** that allows users to download **intraday, 
    ```bash
    streamlit run app.py```
    
-Save this as `README.md` in your GitHub repository. Let me know if you need any edits! 🚀
+After running the command, a web browser will open with the application interface. If it doesn't open automatically, check the terminal output for a local URL (e.g., http://localhost:8501/) and open it manually in your browser.
+
+Contributing 🤝
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+License 📜
+This project is open-source under the MIT License.
+This version provides clear instructions for running the app. Let me know if you need any modifications! 🚀
+
 
