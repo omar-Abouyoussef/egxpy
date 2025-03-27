@@ -14,7 +14,7 @@ If you have any inquiries, feedback, or business opportunities, feel free to rea
 """)
 
 st.write("""
-We are working on an API to provide EGX stock market data for FREE. Stay tuned for updates!
+We are working on an API to provide historical EOD and intraday EGX stock market data for FREE.
 
 **Coming Soon Features:**
 - **Intraday & Historical Data** (1-min, 5-min, 30-min) - 100% open source and FREE
