@@ -113,7 +113,7 @@ tickers = st.text_input(label='Ticker(s): Enter all Caps',
 tickers = st.session_state.tickers.upper()
 
 interval = st.selectbox(label='Interval',
-                       options = ['Daily','Weekly','Monthly'],
+                       options = ['1 Minute','5 Minute','30 Minute','Daily','Weekly','Monthly'],
                        key='interval',
                       )
 interval = st.session_state.interval
