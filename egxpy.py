@@ -9,9 +9,10 @@ from utils.download import get_EGXdata, get_EGX_intraday_data, get_OHLCV_data
 def to_excel(df):
     output = io.BytesIO()
     with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
-        df.to_excel(writer, index=False, sheet_name='EGX Data')
+        df.reset_index().to_excel(writer, index=False, sheet_name='EGX Data')  # Reset index to include 'Date'
     processed_data = output.getvalue()
     return processed_data
+
 
 
 st.set_page_config(page_title="Download Data", layout='wide')
