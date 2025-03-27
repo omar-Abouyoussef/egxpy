@@ -9,13 +9,13 @@ Webapp: https://egx-data.streamlit.app/
 
 ## Features 🚀  
 ✔️ **User-friendly interface** powered by Streamlit  
-✔️ **Download historical stock data** with various timeframes  
-✔️ **Intraday & 1-minute data support**  
+✔️ **Download historical stock data** with various timeframes    
 ✔️ **Fast and efficient data retrieval**  
 
 ## Future Plans 🔥  
 🔹 Provide an **API** for programmatic access  
-🔹 Expand data sources and improve performance  
+🔹 Expand data sources and improve performance
+🔹 Intraday & 1-minute data support**
 
 ## Installation & Usage 🛠️  
 1. Clone this repository:  
