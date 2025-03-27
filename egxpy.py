@@ -21,7 +21,7 @@ tickers = st.text_input(label='Ticker(s): Enter all Caps',
 tickers = st.session_state.tickers.upper()
 
 interval = st.selectbox(label='Interval',
-                       options = ['1 Minute','5 Minute','30 Minute','Daily','Weekly','Monthly'],
+                       options = ['Daily','Weekly','Monthly'],
                        key='interval',
                       )
 interval = st.session_state.interval
@@ -47,4 +47,4 @@ if start < end:
 else:
     pass
 
-st.write("Note: Intraday data is available for the last 3000 bars and delayed by 20 minutes. ")
+# st.write("Note: Intraday data is available for the last 3000 bars and delayed by 20 minutes. ")
