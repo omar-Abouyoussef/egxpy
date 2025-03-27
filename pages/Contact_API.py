@@ -20,7 +20,7 @@ We are working on an API to provide and historical EGX stock market data for FRE
 **Coming Soon Features:**
 - **Intraday & Historical Data** (1-min, 5-min, 30-min) - 100% open source and FREE
 - **Portfolio Optimization and Index Tracking**
-- **Other EGX Techsolution**
+- **Other EGX Tech-Solution**
 - **US Market data available on demand - 100% open source and FREE**
          
 """)
