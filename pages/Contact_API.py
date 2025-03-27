@@ -4,7 +4,7 @@ import streamlit as st
 st.title("📞 Contact & API Access")
 
 # Contact Information
-st.header("🔑 Free API Access")
+st.header("Free API Access")
 st.header("📩 Contact Us")
 st.write("""
 If you have any inquiries, feedback, or business opportunities, feel free to reach out!
