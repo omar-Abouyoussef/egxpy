@@ -93,6 +93,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+st.sidebar.page_link("pages/Contact_API.py", label="📞 Contact & API")
+
 
 # Footer
 st.markdown("<p class='footer'> 100% Free & Open Source</p>", unsafe_allow_html=True)
