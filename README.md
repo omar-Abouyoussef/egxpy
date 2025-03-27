@@ -3,7 +3,7 @@ Download Data for EGX
 
 # EGX Stock Data Downloader 📊  
 
-A **Streamlit-based web application** that allows users to download **intraday, daily, weekly, monthly, and even 1-minute historical data** for the **Egyptian Exchange (EGX)**. This project is **100% free and open-source**.  
+A **Streamlit-based web application** that allows users to download **intraday, daily, weekly, and monthly historical data** for the **Egyptian Exchange (EGX)**. This project is **100% free and open-source**.  
 
 Webapp: [https://egxpy-downloa-data.streamlit.app/](https://egxpy-download-data.streamlit.app/)
 
