@@ -25,9 +25,7 @@ A **Streamlit-based web application** that allows users to download **intraday, 
    pip install -r requirements.txt
 3. Run the App ▶️:
    ```bash
-   streamlit run app.py
-
-
-
+   streamlit run app.py```
+   
 Save this as `README.md` in your GitHub repository. Let me know if you need any edits! 🚀
 
