@@ -36,6 +36,5 @@ Contributions are welcome! Feel free to open issues or submit pull requests.
 
 License 📜
 This project is open-source under the MIT License.
-This version provides clear instructions for running the app. Let me know if you need any modifications! 🚀
 
 
