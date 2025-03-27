@@ -113,7 +113,7 @@ def get_EGXdata(stock_list:list, interval:str, start:date, end:date, date:date):
 def get_EGX_intraday_data(stock_list:list, interval:str, start:date, end:date, date:date):
 
     date=dt.today().date()
-    n = holidays.country_holidays('EG').get_working_days_count(start,end)
+    n =3000
 
 
 
