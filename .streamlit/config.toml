@@ -1,0 +1,12 @@
+[server]
+headless = true
+port = 8501
+enableCORS = false
+
+[theme]
+base = "dark"  # Dark theme for a professional trading experience
+primaryColor = "#FFD700"  # Gold for financial growth
+backgroundColor = "#0A1F12"  # Deep green for stability (stock market theme)
+secondaryBackgroundColor = "#123524"  # Slightly lighter green for contrast
+textColor = "#FFFFFF"  # White text for readability
+font = "monospace"  # Professional financial look
