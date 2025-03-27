@@ -24,4 +24,4 @@ We are working on an API to provide historical EOD and intraday EGX stock market
          
 """)
 
-st.markdown("<p style='text-align: center; color: gray;'>© 2025 Data Solutions For EGX | 100% Free & Open Source</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: gray;'>2025 | 100% Free & Open Source</p>", unsafe_allow_html=True)
