@@ -123,8 +123,9 @@ if start < end:
 
     else:
         df = get_EGXdata(tickers.split(" "),interval,start,end,date)
-    
-    st.write(df)
+        df.index = df.index.date
+
+    st.dataframe(df)
 else:
     pass
 
