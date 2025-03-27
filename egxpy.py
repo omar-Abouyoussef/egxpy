@@ -2,8 +2,16 @@ import streamlit as st
 from datetime import datetime as dt
 import pandas as pd
 import numpy as np
+import io
 from utils.download import get_EGXdata, get_EGX_intraday_data, get_OHLCV_data
 
+
+def to_excel(df):
+    output = io.BytesIO()
+    with pd.ExcelWriter(output, engine='xlsxwriter') as writer:
+        df.to_excel(writer, index=False, sheet_name='EGX Data')
+    processed_data = output.getvalue()
+    return processed_data
 
 
 st.set_page_config(page_title="Download Data", layout='wide')
@@ -124,9 +132,19 @@ if start < end:
     else:
         df = get_EGXdata(tickers.split(" "),interval,start,end,date)
         df.index = df.index.date
+    
+    st.write(df)
 
-    st.dataframe(df)
+# Download Button
+    st.download_button(
+        label="Download Data",
+        data=to_excel(df),
+        file_name="EGX_Stock_Data.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    )
+
 else:
     pass
+
 
 # st.write("Note: Intraday data is available for the last 3000 bars and delayed by 20 minutes. ")
