@@ -141,10 +141,11 @@ if start < end:
 # Download Button
     st.download_button(
         label="Download Data",
-        data=to_excel(df),
-        file_name="EGX_Stock_Data.xlsx",
+        data=df.to_csv(),
+        file_name="Data.csv",
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     )
+    
 
 else:
     pass
