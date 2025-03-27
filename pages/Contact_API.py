@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set Page Title
-st.title("📞 Contact & API Access")
+st.title("📩 Contact & API Access")
 
 # Contact Information
 st.header("Free API Access")
