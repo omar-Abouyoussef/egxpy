@@ -4,10 +4,64 @@ import pandas as pd
 import numpy as np
 from utils.download import get_EGXdata, get_EGX_intraday_data, get_OHLCV_data
 
+# Inject custom CSS
+st.markdown("""
+    <style>
+    /* Custom title */
+    .title {
+        font-size: 36px;
+        font-weight: bold;
+        color: #FFD700; /* Gold */
+        text-align: center;
+    }
+    
+    /* Sidebar styling */
+    [data-testid="stSidebar"] {
+        background-color: #123524 !important; /* Sidebar with dark green */
+    }
+    
+    /* Main content styling */
+    .main-container {
+        background-color: #0A1F12 !important;
+        color: white;
+    }
+    
+    /* Buttons */
+    .stButton>button {
+        background-color: #FFD700 !important;
+        color: #0A1F12 !important;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    
+    /* Table styles for financial data */
+    .stTable {
+        background-color: #0A1F12;
+        color: white;
+        border: 1px solid #FFD700;
+    }
+    
+    /* Centered footer */
+    .footer {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        color: white;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
+# App title
+st.markdown("<h1 class='title'>EGX Stock Market Data Downloader</h1>", unsafe_allow_html=True)
 
+# Your Streamlit app logic goes here...
+
+# Footer
+st.markdown("<p class='footer'>100% Free & Open Source | Powered by Streamlit</p>", unsafe_allow_html=True)
 st.set_page_config(page_title="Download Data", layout='wide')
-st.title('Download Data')
+
 
 
 ##############################
