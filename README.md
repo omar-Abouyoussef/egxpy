@@ -19,8 +19,13 @@ A **Streamlit-based web application** that allows users to download **intraday, 
 1. Clone this repository:  
    ```bash
    git clone https://github.com/yourusername/egx-stock-downloader.git
-   cd egx-stock-downloader
-
+   cd egx-stock-downloader```
+2. Install the Dependencies:
+    ```bash
+   pip install -r requirements.txt
+3. Run the App ▶️:
+   ```bash
+   streamlit run app.py
 
 
 
