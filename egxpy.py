@@ -6,7 +6,7 @@ from utils.download import get_EGXdata, get_EGX_intraday_data, get_OHLCV_data
 
 
 
-st.set_page_config(page_title="Download Data", page_layout='wide')
+st.set_page_config(page_title="Download Data", layout='wide')
 st.title('Download Data')
 
 
