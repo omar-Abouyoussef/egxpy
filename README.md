@@ -13,6 +13,9 @@ Webapp: [https://egxpy-downloa-data.streamlit.app/](https://egxpy-download-data.
 ✔️ **User-friendly interface** powered by Streamlit  
 ✔️ **Download historical stock data** with various timeframes    
 ✔️ **Fast and efficient data retrieval**  
+✔️ **Portfolio Optimization – Optimize stock allocations using Modern Portfolio Theory (MPT)**
+✔️ **Fast and efficient data retrieval**  
+ 
 
 ## Future Plans 🔥  
 🔹 Provide an **API** for programmatic access  
