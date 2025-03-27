@@ -4,9 +4,9 @@ port = 8501
 enableCORS = false
 
 [theme]
-base = "dark"  # Dark theme for a professional trading experience
-primaryColor = "#FFD700"  # Gold for financial growth
-backgroundColor = "#0A1F12"  # Deep green for stability (stock market theme)
-secondaryBackgroundColor = "#123524"  # Slightly lighter green for contrast
-textColor = "#FFFFFF"  # White text for readability
-font = "monospace"  # Professional financial look
+base = "dark"
+primaryColor = "#FFD700"  # Gold for financial highlights
+backgroundColor = "#10141A"  # Dark navy for a sleek UI
+secondaryBackgroundColor = "#1A1F29"  # Darker sidebar contrast
+textColor = "#EAEAEA"  # Off-white for readability
+font = "sans serif"  # We'll override this in CSS for "Inter"
