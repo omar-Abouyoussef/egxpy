@@ -6,7 +6,88 @@ from utils.download import get_EGXdata, get_EGX_intraday_data, get_OHLCV_data
 
 
 
-st.set_page_config(page_title="Download Data")
+st.set_page_config(page_title="Download Data", layout='wide')
+
+
+st.markdown("""
+    <style>
+    /* Import Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    /* Global app styles */
+    html, body, [class*="st-"] {
+        font-family: 'Inter', sans-serif !important;
+    }
+    
+    /* Title styling */
+    .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #FFD700; /* Gold */
+        margin-left: 10px; /* Space between logo and title */
+    }
+
+    /* Sidebar styling */
+    [data-testid="stSidebar"] {
+        background-color: #1A1F29 !important;
+        color: #EAEAEA !important;
+    }
+    
+    /* Main content styling */
+    .main-container {
+        background-color: #10141A !important;
+        color: #EAEAEA !important;
+    }
+
+    /* Gold buttons with hover effect */
+    .stButton>button {
+        background-color: #FFD700 !important;
+        color: #10141A !important;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: 10px 20px;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+    }
+
+    .stButton>button:hover {
+        background-color: #E6C200 !important;
+        transform: scale(1.05);
+        box-shadow: 0px 6px 15px rgba(255, 215, 0, 0.6);
+    }
+
+    /* Tables */
+    .stTable {
+        background-color: #1A1F29;
+        color: #EAEAEA;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    /* Footer */
+    .footer {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        color: #B0B0B0;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
+
+# Footer
+st.markdown("<p class='footer'> 100% Free & Open Source</p>", unsafe_allow_html=True)
+
 st.title('Download Data')
 
 
