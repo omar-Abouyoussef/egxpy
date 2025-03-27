@@ -5,7 +5,6 @@ st.title("📞 Contact & API Access")
 
 # Contact Information
 st.header("Free API Access")
-st.header("📩 Contact Us")
 st.write("""
 If you have any inquiries, feedback, or business opportunities, feel free to reach out!
 - **Email**: anno.adham@gmail.com
