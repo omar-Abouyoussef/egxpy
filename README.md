@@ -1,4 +1,4 @@
-# Demo
+# EGX Data and Optimization
 Download Data for EGX 
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/omar-Abouyoussef/demo?style=social)
