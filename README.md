@@ -24,14 +24,10 @@ Webapp: [https://egxpy-downloa-data.streamlit.app/](https://egxpy-download-data.
 ## Installation & Usage 🛠️  
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/yourusername/egx-stock-downloader.git```
+   git clone https://github.com/omar-Abouyoussef/EGXPY.git```
 2. Install the Dependencies:
     ```bash
-   pip install -r requirements.txt
-3. Run the App ▶️:
-   ```bash
-   streamlit run app.py```
-   
+   pip install -r requirements.txt```
 After running the command, a web browser will open with the application interface. If it doesn't open automatically, check the terminal output for a local URL (e.g., http://localhost:8501/) and open it manually in your browser.
 
 Contributing 🤝
