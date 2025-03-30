@@ -13,20 +13,18 @@ Webapp: [https://egxpy-downloa-data.streamlit.app/](https://egxpy-download-data.
 ✔️ **User-friendly interface** powered by Streamlit  
 ✔️ **Download historical stock data** with various timeframes    
 ✔️ **Fast and efficient data retrieval**  
-✔️ **Portfolio Optimization – Optimize stock allocations using Modern Portfolio Theory (MPT)**
-✔️ **Fast and efficient data retrieval**  
+✔️ **Portfolio Optimization** – Optimize stock allocations using Modern Portfolio Theory (MPT)
  
 
 ## Future Plans 🔥  
 🔹 Provide an **API** for programmatic access  
 🔹 Expand data sources and improve performance
-🔹 Intraday & 1-minute data support**
+🔹 Intraday & 1-minute data support
 
 ## Installation & Usage 🛠️  
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/yourusername/egx-stock-downloader.git
-   cd egx-stock-downloader```
+   git clone https://github.com/yourusername/egx-stock-downloader.git```
 2. Install the Dependencies:
     ```bash
    pip install -r requirements.txt
