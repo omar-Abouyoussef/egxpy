@@ -58,7 +58,8 @@ def _get_intraday_close_price_data(symbol,exchange,interval,n_bars, date):
     tv = TvDatafeedLive()
     response = tv.get_hist(symbol=symbol,
                     exchange=exchange,interval=interval_dic[interval], n_bars=n_bars, timeout=-1)['close']
-    return response
+    return response.tz_localize("Europe/London").tz_convert("UTC+02:00")
+
 
 
 @retry((Exception), tries=20, delay=0.5, backoff=0)
@@ -125,8 +126,6 @@ def get_EGX_intraday_data(stock_list:list, interval:str, start:date, end:date, d
     except:
         pass
     df = pd.concat(close_prices_dic,axis=1)
-    df.tz_localize("Europe/London").tz_convert("UTC+02:00")
-
 
     return df.loc[start:end,:]
 
