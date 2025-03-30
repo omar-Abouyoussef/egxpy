@@ -1,5 +1,5 @@
 # EGX Data and Optimization
-Download Data for EGX 
+Download Data for EGX and Portfolio Optimization
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/omar-Abouyoussef/demo?style=social)
 
