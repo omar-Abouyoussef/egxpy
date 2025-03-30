@@ -138,6 +138,7 @@ if start < end:
         df.index = df.index.date
     
     st.write(df)
+    st.write(f"Samples:{df.shape[0]}")
 
 # Download Button
     st.download_button(
