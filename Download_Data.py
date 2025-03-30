@@ -153,6 +153,6 @@ else:
     pass
 
 
-st.write("Note: Intraday data is available for the last 3000 bars and delayed by 20 minutes.")
+st.write("Note: Intraday data is delayed by 20 minutes.")
 
 
