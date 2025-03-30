@@ -125,7 +125,8 @@ def get_EGX_intraday_data(stock_list:list, interval:str, start:date, end:date, d
         pass
     df = pd.concat(close_prices_dic,axis=1)
 
-    return df.loc[start:end,:]
+    return df.loc[start:end,:].tz_localize("Europe/London").tz_convert("UTC+02:00")
+
 
 
 
