@@ -155,8 +155,3 @@ else:
 st.write("Note: Intraday data is available for the last 3000 bars and delayed by 20 minutes.")
 
 
-
-test=_get_intraday_close_price_data("COMI","EGX", "1 Minute", 3000, date)
-st.write(test.tz_localize("Europe/London").tz_convert("UTC+02:00"))
-
-
