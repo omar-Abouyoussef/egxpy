@@ -13,7 +13,7 @@ import streamlit as st
 @retry((Exception), tries=20, delay=0.5, backoff=0)
 @st.cache_data
 def get_OHLCV_data(symbol,exchange,interval,n_bars, date):
-    """fitches close prices for a single ticker
+    """fetches close prices for a single ticker
 
     Args:
         symbol (str): Ticker
@@ -39,7 +39,7 @@ def get_OHLCV_data(symbol,exchange,interval,n_bars, date):
 @retry((Exception), tries=20, delay=0.5, backoff=0)
 @st.cache_data
 def _get_intraday_close_price_data(symbol,exchange,interval,n_bars, date):
-    """fitches close prices for a single ticker
+    """fetches close prices for a single ticker
 
     Args:
         symbol (str): Ticker
@@ -64,7 +64,7 @@ def _get_intraday_close_price_data(symbol,exchange,interval,n_bars, date):
 @retry((Exception), tries=20, delay=0.5, backoff=0)
 @st.cache_data
 def _get_close_price_data(symbol,exchange,interval,n_bars, date):
-    """fitches close prices for a single ticker
+    """fetches close prices for a single ticker
 
     Args:
         symbol (str): Ticker
