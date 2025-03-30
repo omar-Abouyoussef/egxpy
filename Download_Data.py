@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import io
 from utils.download import get_EGXdata, get_EGX_intraday_data, get_OHLCV_data
+from utils.download import _get_intraday_close_price_data
 
 
 def to_excel(df):
@@ -152,3 +153,8 @@ else:
 
 
 st.write("Note: Intraday data is available for the last 3000 bars and delayed by 20 minutes.")
+
+
+
+test=_get_intraday_close_price_data("COMI","EGX", "1 Minute", 3000, date)
+st.write(test)
