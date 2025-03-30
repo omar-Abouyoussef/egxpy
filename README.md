@@ -28,7 +28,6 @@ Webapp: [https://egxpy-downloa-data.streamlit.app/](https://egxpy-download-data.
 2. Install the Dependencies:
     ```bash
    pip install -r requirements.txt```
-After running the command, a web browser will open with the application interface. If it doesn't open automatically, check the terminal output for a local URL (e.g., http://localhost:8501/) and open it manually in your browser.
 
 Contributing 🤝
 Contributions are welcome! Feel free to open issues or submit pull requests.
