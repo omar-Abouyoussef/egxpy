@@ -1,26 +1,42 @@
 import streamlit as st
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+import json
 
-# Set Page Title
-st.title("📩 Contact & API Access")
+# Load credentials from Streamlit secrets
+creds_json = st.secrets["google_service_account"]
+creds_dict = json.loads(json.dumps(creds_json))
 
-# Contact Information
-st.header("Free API Access")
-st.write("""
-If you have any inquiries, feedback, or business opportunities, feel free to reach out!
-- **Email**: anno.adham@gmail.com
-- **Email**: o.abouyoussef73@gmail.com
-- **WhatsApp**: +20 100 857 9698
-""")
+# Authenticate with Google Sheets API
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
+client = gspread.authorize(creds)
 
-st.write("""
-We are working on an API to provide historical EOD and intraday EGX stock market data for FREE.
+# Open Google Sheet
+SHEET_NAME = "EGX_API_Requests"
+sheet = client.open(SHEET_NAME).sheet1
 
-**Coming Soon Features:**
-- **Intraday & Historical Data** (1-min, 5-min, 30-min) - 100% open source and FREE
-- **Portfolio Optimization and Index Tracking**
-- **Other EGX Tech-Solution**
-- **US Market data available on demand - 100% open source and FREE**
-         
-""")
+def save_to_google_sheets(name, email, company, use_case):
+    """Saves form responses to a Google Sheet."""
+    try:
+        sheet.append_row([name, email, company, use_case])
+        return True
+    except Exception as e:
+        st.error(f"❌ Error saving data: {e}")
+        return False
 
-st.markdown("<p style='text-align: center; color: gray;'>2025 | 100% Free & Open Source</p>", unsafe_allow_html=True)
+# Streamlit form
+st.title("API Access Request Form")
+with st.form("api_access_form"):
+    name = st.text_input("Full Name")
+    email = st.text_input("Email Address")
+    company = st.text_input("Company (if applicable)")
+    use_case = st.text_area("Intended Use Case for API")
+    
+    submitted = st.form_submit_button("Request Access")
+    if submitted:
+        if name and email:
+            if save_to_google_sheets(name, email, company, use_case):
+                st.success(f"✅ Thank you, {name}! We'll contact you at {email} when the API is available.")
+        else:
+            st.warning("⚠️ Please fill in at least your name and email.")
