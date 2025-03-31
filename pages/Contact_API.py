@@ -52,7 +52,7 @@ def save_to_google_sheets(fname, lname, email, number, company, use_case):
 
 # Streamlit form
 st.title("API Access Request Form")
-sr.write("We will contact withing 2 business day")
+st.write("We will contact withing 2 business day")
 with st.form("api_access_form"):
     fname = st.text_input("First Name")
     lname = st.text_input("Last Name")
