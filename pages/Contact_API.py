@@ -63,6 +63,6 @@ with st.form("api_access_form"):
     if submitted:
         if fname and email:
             if save_to_google_sheets(fname, lname, email, company, use_case):
-                st.success(f"✅ Thank you, {name}! We'll contact you at {email} when the API is available.")
+                st.success(f"✅ Thank you, {fname}! We'll contact you at {email} when the API is available.")
         else:
             st.warning("⚠️ Please fill in at least your name and email.")
