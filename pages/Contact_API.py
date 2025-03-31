@@ -41,7 +41,7 @@ client = gspread.authorize(creds)
 SHEET_NAME = "EGX_API_Requests"
 sheet = client.open(SHEET_NAME).sheet1
 
-def save_to_google_sheets(fname, lname, email, number company, use_case):
+def save_to_google_sheets(fname, lname, email, number, company, use_case):
     """Saves form responses to a Google Sheet."""
     try:
         sheet.append_row([fname, lname, email, number, company, use_case])
