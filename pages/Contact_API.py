@@ -53,7 +53,8 @@ def save_to_google_sheets(name, email, company, use_case):
 # Streamlit form
 st.title("API Access Request Form")
 with st.form("api_access_form"):
-    name = st.text_input("Full Name")
+    fname = st.text_input("First Name")
+    lname = st.text_input("Last Name")
     email = st.text_input("Email Address")
     company = st.text_input("Company (if applicable)")
     use_case = st.text_area("Intended Use Case for API")
@@ -61,7 +62,7 @@ with st.form("api_access_form"):
     submitted = st.form_submit_button("Request Access")
     if submitted:
         if name and email:
-            if save_to_google_sheets(name, email, company, use_case):
+            if save_to_google_sheets(fname, lname, email, company, use_case):
                 st.success(f"✅ Thank you, {name}! We'll contact you at {email} when the API is available.")
         else:
             st.warning("⚠️ Please fill in at least your name and email.")
