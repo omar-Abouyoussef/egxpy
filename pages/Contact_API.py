@@ -29,10 +29,8 @@ st.write("""
 st.markdown("### 📌 **Interested in API Access?**")
 st.write("Fill out the form below to get early access when our API launches.")
 
-
-# Load credentials from Streamlit secrets
-creds_json = st.secrets["google_service_account"]
-creds_dict = json.loads(json.dumps(creds_json))
+# Load credentials directly from Streamlit secrets
+creds_dict = st.secrets["google_service_account"]
 
 # Authenticate with Google Sheets API
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
