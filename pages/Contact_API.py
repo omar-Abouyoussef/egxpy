@@ -41,10 +41,10 @@ client = gspread.authorize(creds)
 SHEET_NAME = "EGX_API_Requests"
 sheet = client.open(SHEET_NAME).sheet1
 
-def save_to_google_sheets(fname, lname, email, company, use_case):
+def save_to_google_sheets(fname, lname, email, number company, use_case):
     """Saves form responses to a Google Sheet."""
     try:
-        sheet.append_row([fname, lname, email, company, use_case])
+        sheet.append_row([fname, lname, email, number, company, use_case])
         return True
     except Exception as e:
         st.error(f"❌ Error saving data: {e}")
@@ -52,17 +52,19 @@ def save_to_google_sheets(fname, lname, email, company, use_case):
 
 # Streamlit form
 st.title("API Access Request Form")
+sr.write("We will contact withing 2 business day")
 with st.form("api_access_form"):
     fname = st.text_input("First Name")
     lname = st.text_input("Last Name")
     email = st.text_input("Email Address")
+    number = st.text_input("WhatsApp number")
     company = st.text_input("Company (if applicable)")
     use_case = st.text_area("Intended Use Case for API")
     
     submitted = st.form_submit_button("Request Access")
     if submitted:
         if fname and email:
-            if save_to_google_sheets(fname, lname, email, company, use_case):
+            if save_to_google_sheets(fname, lname, email, number, company, use_case):
                 st.success(f"✅ Thank you, {fname}! We'll contact you at {email} when the API is available.")
         else:
             st.warning("⚠️ Please fill in at least your name and email.")
