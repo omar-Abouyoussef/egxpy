@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import io
 from utils.download import get_EGXdata, get_EGX_intraday_data, get_OHLCV_data
+from utils.download import _get_intraday_close_price_data
 
 
 def to_excel(df):
@@ -137,6 +138,7 @@ if start < end:
         df.index = df.index.date
     
     st.write(df)
+    st.write(f"Samples:{df.shape[0]}")
 
 # Download Button
     st.download_button(
@@ -151,4 +153,5 @@ else:
     pass
 
 
-st.write("Note: Intraday data is available for the last 3000 bars and delayed by 20 minutes.")
+st.write("Note: Intraday data is delayed by 20 minutes.")
+
