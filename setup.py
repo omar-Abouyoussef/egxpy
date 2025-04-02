@@ -23,7 +23,7 @@ setup(
         "datetime",
         "holidays",
         "retry",
-        "https://github.com/rongardF/tvdatafeed.git",
+        "tvDatafeed",
         "scipy"
     ],
 )
