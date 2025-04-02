@@ -16,7 +16,6 @@ setup(
     author_email="o.abouyoussef73@gmail.com",
     description="Historical Data And Portfolio Optimization For EGX",
     long_description_content_type="text/markdown",
-    long_description=long_description,
     install_requires=[
         "setuptools",
         "pandas",
