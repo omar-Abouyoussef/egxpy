@@ -1,7 +1,0 @@
-[theme]
-base = "dark"
-primaryColor = "#FFD700"  # Gold for financial highlights
-backgroundColor = "#10141A"  # Dark navy for a sleek UI
-secondaryBackgroundColor = "#1A1F29"  # Darker sidebar contrast
-textColor = "#EAEAEA"  # Off-white for readability
-font = "sans serif"  # We'll override this in CSS for "Inter"
