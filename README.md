@@ -7,7 +7,7 @@ Download Data for EGX and Portfolio Optimization
 
 A **Streamlit-based web application** that allows users to download **intraday, daily, weekly, and monthly historical data** for the **Egyptian Exchange (EGX)**. This project is **100% free and open-source**.  
 
-Webapp: [[https://egxpy-downloa-data.streamlit.app/](https://egxpy-download-data.streamlit.app/)](https://egxpy-lab.streamlit.app/)
+Webapp: [https://egxpy-lab.streamlit.app/]
 
 ## Features 🚀  
 ✔️ **User-friendly interface** powered by Streamlit  
