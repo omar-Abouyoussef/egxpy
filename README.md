@@ -22,9 +22,9 @@ Webapp: [https://egxpy-downloa-data.streamlit.app/](https://egxpy-download-data.
 🔹 Intraday & 1-minute data support
 
 ## Installation & Usage 🛠️  
-1. Clone this repository:  
+1. Install this repository:  
    ```bash
-   git clone https://github.com/omar-Abouyoussef/EGXPY.git```
+   pip install git+https://github.com/omar-Abouyoussef/egxpy.git
 2. Install the Dependencies:
     ```bash
    pip install -r requirements.txt```
