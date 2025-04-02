@@ -121,7 +121,6 @@ def optimize(type, close, n, risk_free_rate:float,  upper_bound:float):
     Returns:
         pd.DataFrame: optimal weights
     """
-    close = pd.read_csv(close, index_col=0, header=0)
 
     # close, mean_returns, cov = liquid_data(close)
     mean_returns, cov = stock_performance(close)
