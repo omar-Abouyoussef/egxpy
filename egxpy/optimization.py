@@ -126,7 +126,7 @@ def optimize(type, close, n, risk_free_rate:float,  upper_bound:float):
     mean_returns, cov = stock_performance(close)
 
     #maximum Sharpe Ratio portfolio
-    if type == 'Sharpe Ratio':
+    if type == 'Sharpe':
         metric, optimal_weights = _optimize_portfolio(mean_returns, cov, upper_bound, risk_free_rate,n)
     elif type=='MinRisk':
         metric, optimal_weights = _minimum_risk_portfolio(mean_returns, cov, upper_bound, risk_free_rate,n)
