@@ -22,11 +22,11 @@ If you have any inquiries, feel free to reach out!
 st.subheader("🔑 API Access")
 st.write("""
 🚀 **Coming Soon Features:**  
-✅ Intraday & Historical Data (1-min, daily, weekly, monthly) 
-✅ JSON & CSV Support  
-✅ Portfolio Optimization and Index Tracking Portoflios
-✅ Volatility Modelling
-✅ Automated Financial Modelling and DCF Models
+- ✅ Intraday & Historical Data (1-min, daily, weekly, monthly) 
+- ✅ JSON & CSV Support  
+- ✅ Portfolio Optimization and Index Tracking Portoflios
+- ✅ Volatility Modelling
+- ✅ Automated Financial Modelling and DCF Models
 """)
 
 st.markdown("### 📌 **Interested in API Access?**")
