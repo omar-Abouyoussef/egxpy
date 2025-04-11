@@ -26,7 +26,7 @@ st.write("""
 - ✅ JSON & CSV Support  
 - ✅ Portfolio Optimization and Index Tracking Portoflios
 - ✅ Volatility Modelling
-**Future Plans:**
+- **Future Plans:**
 - ✅ Automated Financial Modelling and DCF Models
 - ✅ Robo Advisors
 
