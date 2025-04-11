@@ -14,7 +14,7 @@ st.write("""
 If you have any inquiries, feel free to reach out!  
 - 📧 **Email**: anno.adham@gmail.com
 - 📧 **Email**: o.abouyoussef73@gmail.com
-- 🔗 **LinkedIn**: [EGXLytics](https://www.linkedin.com/company/egxlytics/about/)  
+- 🔗 **LinkedIn**: [EGXLytics](https://www.linkedin.com/company/egxlytics)  
 -  **WhatsApp**: +20 100 8579698
 """)
 
