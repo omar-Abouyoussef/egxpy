@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit.components.v1 import components
 from datetime import datetime as dt
 import pandas as pd
 import numpy as np
@@ -18,7 +19,7 @@ def to_excel(df):
 
 st.set_page_config(page_title="Download Data", layout='wide')
 
-st.markdown("""
+components.html("""
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NW0KJWXVF"></script>
 <script>
@@ -28,7 +29,7 @@ st.markdown("""
 
   gtag('config', 'G-6NW0KJWXVF');
 </script>
-""", unsafe_allow_html=True)
+""")
 
 st.markdown("""
     <style>
