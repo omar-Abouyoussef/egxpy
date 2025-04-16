@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit.components.v1 import components
+import streamlit.components.v1 as components
 from datetime import datetime as dt
 import pandas as pd
 import numpy as np
