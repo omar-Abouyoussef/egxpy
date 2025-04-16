@@ -19,7 +19,7 @@ def to_excel(df):
 
 st.set_page_config(page_title="Download Data", layout='wide')
 
-components.html("""
+components.iframe("""
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NW0KJWXVF"></script>
 <script>
