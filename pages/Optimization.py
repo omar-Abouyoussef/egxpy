@@ -166,7 +166,7 @@ if close:
         
     with cols[1]:
         st.dataframe(portfolio_weights)
-    portfolio = portfolio_weights @ close.loc[:,portfolio_weights.ticker]
+    portfolio = portfolio_weights @ pd.DataFrame(close).loc[:,portfolio_weights.ticker]
     st.write(portfolio)
 
 
