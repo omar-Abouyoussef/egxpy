@@ -172,6 +172,7 @@ if close:
 
     portfolio = close.loc[:,portfolio_weights.ticker] @ portfolio_weights.weight.values.reshape((-1,1))
     portfolio = portfolio.iloc[-60:,:]
+    st.write(portfolio)
     if benchmark:
         benchmark = pd.read_csv(benchmark, index_col=0, header=0)
         benchmark = benchmark.iloc[-60:,:]
