@@ -167,7 +167,9 @@ if close:
     
 
     portfolio = close.loc[:,portfolio_weights.ticker] @ portfolio_weights.weight.values.reshape((-1,1))
-    px.line(portfolio)
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=portfolio.index, y=portfolio))
+    #fig.add_trace(go.Scatter(x=benchmark.index, y=benchmark))          
 
 
 
