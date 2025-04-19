@@ -167,7 +167,7 @@ if close:
     
 
     portfolio = close.loc[:,portfolio_weights.ticker] @ portfolio_weights.weight.values.reshape((-1,1))
-    st.write(portfolio)
+    px.line(portfolio)
 
 
 
