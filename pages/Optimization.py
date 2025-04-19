@@ -171,8 +171,7 @@ if close:
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=portfolio.index, y=portfolio))
     #fig.add_trace(go.Scatter(x=benchmark.index, y=benchmark))          
-
-
+    st.plotly_chart(fig)
 
 
 
