@@ -157,6 +157,7 @@ if close:
         risk_free_rate=risk_free_rate,
         upper_bound=upper_bound
         )
+    
 
     cols = st.columns([0.7,0.3])
     with cols[0]:
@@ -165,3 +166,7 @@ if close:
         
     with cols[1]:
         st.dataframe(portfolio_weights)
+    portfolio = portfolio_weights @ close
+    st.write(portfolio)
+
+
