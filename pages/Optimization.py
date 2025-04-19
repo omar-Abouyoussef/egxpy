@@ -175,8 +175,12 @@ if close:
     if benchmark:
         benchmark = pd.read_csv(benchmark, index_col=0, header=0)
         fig = go.Figure()
-        fig.add_trace(go.Scatter(x=portfolio.index, y=portfolio.sum(axis=1)))
-        fig.add_trace(go.Scatter(x=benchmark.index, y=benchmark.sum(axis=1)))          
+        fig.add_trace(
+            go.Scatter(x=portfolio.index, y=portfolio.sum(axis=1)/portfolio[0])
+                     )
+        fig.add_trace(
+            go.Scatter(x=benchmark.index, y=benchmark.sum(axis=1)/benchmark[0])
+        )          
         st.plotly_chart(fig)
 
 
