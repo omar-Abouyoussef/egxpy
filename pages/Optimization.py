@@ -179,7 +179,7 @@ if close:
             go.Scatter(x=portfolio.index, y=portfolio.sum(axis=1)/portfolio[0])
                      )
         fig.add_trace(
-            go.Scatter(x=benchmark.index, y=benchmark.sum(axis=1)/benchmark[0])
+            go.Scatter(x=benchmark.index, y=benchmark.sum(axis=1)/benchmark.values[0])
         )          
         st.plotly_chart(fig)
 
