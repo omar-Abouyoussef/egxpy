@@ -147,7 +147,10 @@ holding_period = st.number_input(label='Holding Period:',
 type = st.selectbox(label='Optimization Type',
                    options=['Sharpe Ratio','Minimum Risk'])
 
-
+benchmark = st.file_uploader(label='Upload CSV Of Desired Benchmark',
+                 type='csv',
+                 key='benchmark')
+benchmark = st.session_state.benchmark
 ###########
 #############
 
@@ -168,10 +171,13 @@ if close:
     
 
     portfolio = close.loc[:,portfolio_weights.ticker] @ portfolio_weights.weight.values.reshape((-1,1))
-    fig = go.Figure()
-    fig.add_trace(go.Scatter(x=portfolio.index, y=portfolio.sum(axis=1)))
-    #fig.add_trace(go.Scatter(x=benchmark.index, y=benchmark))          
-    st.plotly_chart(fig)
+
+    if benchmark:
+        benchmark = pd.read_csv(benchmark, index_col=0, header=0)
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(x=portfolio.index, y=portfolio.sum(axis=1)))
+        fig.add_trace(go.Scatter(x=benchmark.index, y=benchmark.sum(axis=1)))          
+        st.plotly_chart(fig)
 
 
 
