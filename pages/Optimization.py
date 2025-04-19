@@ -157,7 +157,6 @@ if close:
         upper_bound=upper_bound
         )
     
-    st.write(close)
     cols = st.columns([0.7,0.3])
     with cols[0]:
         fig = px.pie(portfolio_weights, values='weight', names='ticker', title='Portfolio Weights')
