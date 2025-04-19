@@ -147,7 +147,7 @@ holding_period = st.number_input(label='Holding Period:',
 type = st.selectbox(label='Optimization Type',
                    options=['Sharpe Ratio','Minimum Risk'])
 
-benchmark = st.file_uploader(label='Upload CSV Of Desired Benchmark',
+benchmark = st.file_uploader(label='Upload CSV Of Desired Benchmark (Optional)',
                  type='csv',
                  key='benchmark')
 benchmark = st.session_state.benchmark
@@ -176,10 +176,10 @@ if close:
         benchmark = pd.read_csv(benchmark, index_col=0, header=0)
         fig = go.Figure()
         fig.add_trace(
-            go.Scatter(x=portfolio.index, y=portfolio.sum(axis=1)/portfolio.values[0])
+            go.Scatter(x=portfolio.index, y=portfolio.sum(axis=1)/portfolio.values[0], name="Portfolio")
                      )
         fig.add_trace(
-            go.Scatter(x=benchmark.index, y=benchmark.sum(axis=1)/benchmark.values[0])
+            go.Scatter(x=benchmark.index, y=benchmark.sum(axis=1)/benchmark.values[0], name="Benchmark")
         )          
         st.plotly_chart(fig)
 
