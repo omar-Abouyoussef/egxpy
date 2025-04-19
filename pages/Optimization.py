@@ -158,7 +158,7 @@ if close:
         upper_bound=upper_bound
         )
     
-
+    st.write(close)
     cols = st.columns([0.7,0.3])
     with cols[0]:
         fig = px.pie(portfolio_weights, values='weight', names='ticker', title='Portfolio Weights')
@@ -166,7 +166,10 @@ if close:
         
     with cols[1]:
         st.dataframe(portfolio_weights)
-    portfolio = portfolio_weights @ pd.DataFrame(close).loc[:,portfolio_weights.ticker]
+    portfolio = portfolio_weights @ close.loc[:,portfolio_weights.ticker]
     st.write(portfolio)
+
+
+
 
 
