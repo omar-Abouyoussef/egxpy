@@ -166,7 +166,7 @@ if close:
         st.dataframe(portfolio_weights)
     
 
-    portfolio = close.loc[:,portfolio_weights.ticker] @ portfolio_weights.weight.reshape((-1,1))
+    portfolio = close.loc[:,portfolio_weights.ticker] @ portfolio_weights.weight.values.reshape((-1,1))
     st.write(portfolio)
 
 
